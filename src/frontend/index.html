@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terraform Templates</title>
+    <link rel="stylesheet" href="frontend.css">
+</head>
+<body>
+    <div id="website">
+        <h1 id="title">Terraform Templates</h1>
+
+        <div id="main-div">
+            <div id="div-1">
+                <h2>Beginner Level (Foundational Infrastructure)</h2>
+            </div>
+            <div id="div-2">
+                <h3>Cloud Provider: Azure</h3>
+            </div>
+
+            <hr id="divider">
+
+            <div id="div-3">
+                <div class="template-row">
+                    <span>Resource Group + VNet + Subnet + NSG + Linux VM</span>
+                    <a href="#" class="download-link" id="vm-link">Download</a>
+                </div>
+                <div class="template-row">
+                    <span>Storage Account + Blob Container + Lifecycle Rules</span>
+                    <a href="#" class="download-link" id="storage-link">Download</a>
+                </div>
+                <div class="template-row">
+                    <span>Azure Key Vault + Secret</span>
+                    <a href="#" class="download-link" id="keyvault-link">Download</a>
+                </div>
+                <div class="template-row">
+                    <span>Log Analytics Workspace + Diagnostics for VM</span>
+                    <a href="#" class="download-link" id="log-link">Download</a>
+                </div>
+                <div class="template-row">
+                    <span>Simple App Service + Plan (no DB)</span>
+                    <a href="#" class="download-link" id="appservice-link">Download</a>
+                </div>
+            </div>
+
+            <div id="div-4">
+                <h3 id="thank-you">Thank you!</h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Replace with your actual SAS token
+        const sasToken = "?se=2025-12-31T23%3A59%3A00Z&sp=r&sv=2022-11-02&sr=c&sig=M4EqikyCSnroRDoUIcZi4qCUTA2ruAytfAPWPnG%2BqY8%3D";
+        const storageUrl = "https://tfwebappstorage.blob.core.windows.net/templates/";
+
+        document.getElementById("vm-link").href = storageUrl + "vm.tf" + sasToken;
+        document.getElementById("storage-link").href = storageUrl + "storage.tf" + sasToken;
+        document.getElementById("keyvault-link").href = storageUrl + "keyvault.tf" + sasToken;
+        document.getElementById("log-link").href = storageUrl + "log.tf" + sasToken;
+        document.getElementById("appservice-link").href = storageUrl + "appservice.tf" + sasToken;
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000; /* Pure black */
+    color: #FFFFFF; /* Default text color */
+}
+
+/* Website container */
+#website {
+    min-height: 100vh;
+    padding: 40px;
+    background-color: #000000;
+}
+
+/* Title styling */
+#title {
+    font-size: 3rem;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Section headings */
+#div-1 h2 {
+    font-size: 1.8rem;
+    color: #CCCCCC;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#div-2 h3 {
+    font-size: 1.2rem;
+    color: #AAAAAA;
+    margin-bottom: 30px;
+}
+
+/* Divider line */
+#divider {
+    border: none;
+    height: 2px;
+    background-color: #444444;
+    margin: 20px 0;
+}
+
+/* Template rows */
+#div-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.template-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A1A1A;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 1px #444;
+    transition: background-color 0.2s ease;
+}
+
+.template-row:hover {
+    background-color: #222222;
+}
+
+.template-row span {
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+/* Download link */
+.download-link {
+    text-decoration: none;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-link:hover {
+    background-color: #DDDDDD;
+    color: #000000;
+}
+
+/* Thank you text */
+#thank-you {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
