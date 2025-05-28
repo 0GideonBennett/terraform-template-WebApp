@@ -52,7 +52,10 @@ terraform-template-manager/
 │   │   ├── frontend.css
 │   │   └── app.js
 │   └── backend/
-│       └── main.py
+│       └── file1.tf
+        └── file2.tf
+        etc...
+
 ├── /docs/
 │   ├── architecture.png
 │   └── implementation-steps.md
